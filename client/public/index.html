@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="FitLife - Your Personal Health & Fitness Companion" />
+    <title>FitLife — Health & Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              syne: ['Syne', 'sans-serif'],
+              dm: ['DM Sans', 'sans-serif'],
+            },
+            colors: {
+              accent: '#22d3ee',
+              'accent-green': '#4ade80',
+              dark: {
+                900: '#0a0f1e',
+                800: '#0f172a',
+                700: '#1e293b',
+                600: '#334155',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'slide-up': 'slideUp 0.4s ease-out',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: { '0%': { opacity: 0 }, '100%': { opacity: 1 } },
+              slideUp: { '0%': { opacity: 0, transform: 'translateY(20px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'DM Sans', sans-serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Syne', sans-serif; }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+      .glass-light { backdrop-filter: blur(12px); background: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.4); }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+  </body>
+</html>

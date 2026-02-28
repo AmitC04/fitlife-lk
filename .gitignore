@@ -1,0 +1,89 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Build folders (if any)
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Sequelize
+sequelize-meta.json
+
+# Multer uploads (if storing locally)
+uploads/*
+!uploads/.gitkeep
+
+# SQLite database
+*.db
+
+# Tesseract cache
+tessdata/
+
+# Lock files (optional – keep if team standard requires)
+package-lock.json
+yarn.lock
+
+# Node modules
+node_modules/
+
+# Production build
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# React specific
+.eslintcache
+
+# Lock files (optional – keep if team standard requires)
+package-lock.json
+yarn.lock
