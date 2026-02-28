@@ -35,9 +35,12 @@ coverage/
 # Sequelize
 sequelize-meta.json
 
+# SQLite database file
+fitlife.db
+
 # Multer uploads (if storing locally)
-uploads/*
-!uploads/.gitkeep
+**/uploads/*
+!**/uploads/.gitkeep
 
 # SQLite database
 *.db
